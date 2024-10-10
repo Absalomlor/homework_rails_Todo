@@ -1,0 +1,107 @@
+/* Container */
+.todo-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+  text-align: center; /* Center the content */
+}
+
+/* Tabs */
+.tabs h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #4a90e2;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-between; /* Space between Incomplete and Complete */
+  margin-top: 10px;
+}
+
+.tab-buttons h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.tab-buttons .button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Form */
+.form {
+  margin-top: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between; /* Input and button side by side */
+  align-items: center;
+}
+
+.form-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* Tasks List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-item span {
+  font-size: 18px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.complete-button i, .delete-button i {
+  font-size: 18px;
+  color: #4a90e2;
+  cursor: pointer;
+}
+
+/* View Completed Tasks Link */
+.view-completed-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #4a90e2;
+  text-decoration: none;
+}

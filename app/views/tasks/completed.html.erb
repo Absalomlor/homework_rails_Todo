@@ -1,0 +1,15 @@
+<div style="background-color: #f9f9f9; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 400px; margin: auto; text-align: center;">
+  <h1 style="font-size: 36px; color: #4a90e2; margin-bottom: 20px;">Completed Tasks</h1>
+
+  <% if @completed_tasks.present? %>
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+      <% @completed_tasks.each do |task| %>
+        <li style="font-size: 18px; padding: 10px; border-bottom: 1px solid #eee; color: #333;">
+          <%= task.name %>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p style="font-size: 18px; color: #999; margin-top: 20px;">No completed tasks found.</p>
+  <% end %>
+</div>
