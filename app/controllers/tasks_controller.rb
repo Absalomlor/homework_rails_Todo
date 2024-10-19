@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
   def index
     @tasks = Task.where(status: 'incomplete') 
-    @task = Task.new  
+    @task = Task.new
   end
 
   def create
